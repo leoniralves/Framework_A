@@ -24,13 +24,18 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/leoniralves/Module_A'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Leonir Deolindo' => 'leonir.deolindo@bankly.com.br' }
-     s.source           = { :git => 'https://github.com/leoniralves/Framework_A/Module_A.xcframework.zip', :tag => s.version.to_s }
+    s.source           = { :git => 'git@github.com:leoniralves/Framework_A.git', :tag => s.version.to_s}
 #    s.source           = { :path => './Module_A.xcframework.zip', :tag => s.version.to_s }
-    s.vendored_frameworks = "Module_A.xcframework"
     s.ios.deployment_target = '10.0'
     s.swift_version = '5.0'
+
+    s.vendored_frameworks = "Module_A.xcframework"
+
+    # s.pod_target_xcconfig = { 'VALID_ARCHS' => 'X86_64 armv7 arm64' }
     
-    
+    # s.subspec 'Module_A_1' do |sp|
+    #   sp.vendored_frameworks = "Module_A.xcframework"
+    # end
     
     # s.resource_bundles = {
     #   'Module_A' => ['Module_A/Assets/*.png']
