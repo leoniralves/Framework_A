@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Module_A'
-    s.version          = '0.1.1'
+    s.version          = '0.1.2'
     s.summary          = 'A short description of Module_A.'
   
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/leoniralves/Framework_A'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Leonir Deolindo' => 'leonir.deolindo@bankly.com.br' }
-    s.source           = { :type => 'zip', :http => 'https://storage.googleapis.com/slack-review-test.appspot.com/Module_A.xcframework.zip' }
+    s.source           = { :type => 'zip', :http => 'https://storage/slack-review-test.appspot.com/Module_A.xcframework.zip' }
     s.ios.deployment_target = '10.0'
     s.swift_version = '5.0'
 
