@@ -21,11 +21,10 @@ Pod::Spec.new do |s|
   TODO: Add long description of the pod here.
                          DESC
   
-    s.homepage         = 'https://github.com/leoniralves/Module_A'
+    s.homepage         = 'https://github.com/leoniralves/Framework_A'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Leonir Deolindo' => 'leonir.deolindo@bankly.com.br' }
-    s.source           = { :git => 'git@github.com:leoniralves/Framework_A.git', :tag => s.version.to_s}
-#    s.source           = { :path => './Module_A.xcframework.zip', :tag => s.version.to_s }
+    s.source           = { :http => 'https://github.com/leoniralves/Framework_A/blob/main/Module_A.xcframework.zip' }
     s.ios.deployment_target = '10.0'
     s.swift_version = '5.0'
 
