@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/leoniralves/Framework_A'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Leonir Deolindo' => 'leonir.deolindo@bankly.com.br' }
-    s.source           = { :http => 'https://github.com/leoniralves/Framework_A/blob/main/Module_A.xcframework.zip' }
+    s.source           = { :type => 'zip', :http => 'https://github.com/leoniralves/Framework_A/blob/main/Module_A.xcframework.zip' }
     s.ios.deployment_target = '10.0'
     s.swift_version = '5.0'
 
