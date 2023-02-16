@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Module_A'
-    s.version          = '0.1.2'
+    s.version          = '0.1.3'
     s.summary          = 'A short description of Module_A.'
+    s.authors          = 'Leonir'
   
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -23,11 +24,10 @@ Pod::Spec.new do |s|
   
     s.homepage         = 'https://github.com/leoniralves/Framework_A'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { 'Leonir Deolindo' => 'leonir.deolindo@bankly.com.br' }
-    s.source           = { :type => 'zip', :http => 'https://storage/slack-review-test.appspot.com/Module_A.xcframework.zip' }
+    s.source           = { :git => 'https://github.com/leoniralves/Framework_A.git', :tag => s.version.to_s }
+    s.source           = { :type => 'zip', :http => 'https://dev.azure.com/acessocardvsts/Bankly/_git/fs-radar-security-ios-binary-framework?path=/FSRadarSecurityKit.xcframework.zip' }
     s.ios.deployment_target = '10.0'
     s.swift_version = '5.0'
-
     s.vendored_frameworks = "Module_A.xcframework"
 
     # s.pod_target_xcconfig = { 'VALID_ARCHS' => 'X86_64 armv7 arm64' }
