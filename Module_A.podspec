@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Module_A'
-    s.version          = '0.1.7'
+    s.version          = '0.1.8'
     s.summary          = 'A short description of Module_A.'
     s.authors          = 'Leonir'
   
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   
     s.homepage         = 'https://github.com/leoniralves/Framework_A'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    # s.source           = { :git => 'https://github.com/leoniralves/Framework_A.git', :tag => s.version.to_s }
-    s.source           = { :http => 'https://github.com/leoniralves/Framework_A/releases/download/' + s.version.to_s + '/Module_A.xcframework.zip' }
+    s.source           = { :git => 'https://github.com/leoniralves/Framework_A.git', :tag => s.version.to_s }
+    # s.source           = { :http => 'https://github.com/leoniralves/Framework_A/releases/download/' + s.version.to_s + '/Module_A.xcframework.zip' }
     s.ios.deployment_target = '10.0'
     s.swift_version = '5.0'
     s.vendored_frameworks = "Module_A.xcframework"
